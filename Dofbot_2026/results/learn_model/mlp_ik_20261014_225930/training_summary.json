@@ -1,0 +1,19 @@
+{
+  "mode": "ik",
+  "epochs_completed": 62,
+  "epochs_requested": 200,
+  "early_stopped": true,
+  "best_validation_loss": 0.1337979343732198,
+  "best_epoch": 42,
+  "training_samples": 48000,
+  "validation_samples": 12000,
+  "batch_size": 128,
+  "hidden_layers": [
+    128,
+    128,
+    64
+  ],
+  "patience": 20,
+  "seed": 42,
+  "device": "cpu"
+}

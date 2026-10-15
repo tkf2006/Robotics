@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<robot name="simple_cuboid">
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="0.1" />
+      <inertia ixx="0.000167" ixy="0" ixz="0" iyy="0.000167" iyz="0"
+          izz="0.000167" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.1 0.1 0.1" />
+      </geometry>
+      <material name="cyan">
+        <color rgba="0.1 0.8 0.8 1" />
+      </material>
+    </visual>
+
+    <!--
+      在可视盒体的各角放置接触球，并添加一个以可视原点为中心、尺寸略小的
+      内嵌接触盒。这样既可缓解接触计算问题、提供稳定的桌面接触，也能支持抓取。
+
+      盒体与地面稳定接触时，角点球会提供固定接触点，用于近似表面上的分布式
+      接触。对于任意抓取姿态，略微内嵌的盒体则以很小的偏差产生接触；此处相对
+      可视表面的偏差为 0.0005 m。
+
+      https://github.com/RobotLocomotion/drake/issues/6254 记录了面接触支持的难点。
+     -->
+    <collision>
+      <geometry>
+        <box size="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+
+   </link>
+</robot>

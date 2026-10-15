@@ -1,0 +1,12 @@
+# dh_kine_student.py 所需依赖
+spatialgeometry==1.1.0
+roboticstoolbox-python==1.1.0   # 机器人学工具箱
+scipy==1.8.1
+# 课程环境中的 PyBullet 基于 NumPy 1.x ABI 编译。
+numpy==1.23.5
+pybullet
+matplotlib
+
+# dofbot_learn_student.py 所需依赖
+torch
+pandas

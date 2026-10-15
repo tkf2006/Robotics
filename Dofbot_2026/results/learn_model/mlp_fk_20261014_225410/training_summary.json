@@ -1,0 +1,19 @@
+{
+  "mode": "fk",
+  "epochs_completed": 200,
+  "epochs_requested": 200,
+  "early_stopped": false,
+  "best_validation_loss": 0.00460333289206028,
+  "best_epoch": 199,
+  "training_samples": 48000,
+  "validation_samples": 12000,
+  "batch_size": 128,
+  "hidden_layers": [
+    128,
+    128,
+    64
+  ],
+  "patience": 20,
+  "seed": 42,
+  "device": "cpu"
+}

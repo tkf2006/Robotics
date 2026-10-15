@@ -1,0 +1,41 @@
+# Local Python environments and caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+.vscode/
+.env
+.env.*
+!.env.example
+
+# Generated training data; keep dataset/README.md and normalization statistics
+/Dofbot_2026/dataset/**/*.csv
+/Dofbot_2026/dataset/**/chunk_*.csv
+
+# Regenerable training artifacts; keep best_model.pt and evaluation summaries
+/Dofbot_2026/results/learn_model/**/model_epoch_*.pt
+/Dofbot_2026/results/learn_model/latest_run.json
+
+# LaTeX intermediate files and duplicate rendered output
+/Dofbot_2026/results/build/
+/Dofbot_2026/results/main.aux
+/Dofbot_2026/results/main.log
+/Dofbot_2026/results/main.out
+/Dofbot_2026/results/main.toc
+/Dofbot_2026/results/main.synctex.gz
+/Dofbot_2026/results/main.pdf
+
+# Large simulation recording and duplicate figures
+/Dofbot_2026/results/task7/*.mp4
+/Dofbot_2026/results/task7/final_frame.png
+/Dofbot_2026/results/workspace_figs/
+/Dofbot_2026/results/task3_workspace.png
+
+# Local course handout, scratch screenshots, and personal notes
+/2026dofbot第1、2次大作业介绍(16：9) v1.pdf
+/res/
+/会议纪要.txt
+/逐字稿.txt

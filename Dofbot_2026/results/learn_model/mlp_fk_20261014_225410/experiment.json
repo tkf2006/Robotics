@@ -1,0 +1,21 @@
+{
+  "raw_path": "dataset/60000/dofbot_fk_60000_raw.csv",
+  "stats_path": "dataset/60000/dofbot_fk_60000_norm_stats.json",
+  "fk_model": "results/learn_model/mlp_fk_20261014_225410/best_model.pt",
+  "ik_model": "results/learn_model/mlp_ik_20261014_225930/best_model.pt",
+  "hidden_layers": [
+    128,
+    128,
+    64
+  ],
+  "epochs": 200,
+  "batch_size": 128,
+  "test_count": 1000,
+  "test_seed": 2025,
+  "training_seed": 42,
+  "learning_rate": 0.001,
+  "patience": 20,
+  "checkpoint_interval": 20,
+  "fk_rotation": "PyTorch SVD projection to SO(3)",
+  "ik_selection": "learned FK pose loss, best of two"
+}
