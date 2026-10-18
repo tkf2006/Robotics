@@ -39,3 +39,7 @@ venv/
 /res/
 /会议纪要.txt
 /逐字稿.txt
+
+# Locally assembled course submissions (source code lives under Dofbot_2026/)
+/*第1、2次大作业*.zip
+/*第1、2次大作业*/
